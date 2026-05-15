@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BI Platform AI Assistant</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <div class="background-orbs">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+    </div>
+    
+    <div class="container">
+        <header>
+            <i data-lucide="database" class="logo-icon"></i>
+            <h1>AI Data Assistant</h1>
+            <p>Query your Sakila database using natural language.</p>
+        </header>
+
+        <main>
+            <div id="chat-container" class="chat-container">
+                <div class="message bot">
+                    <div class="avatar"><i data-lucide="bot"></i></div>
+                    <div class="content">Hello! I'm your Business Intelligence AI. Ask me a question about your sales, inventory, or customers.</div>
+                </div>
+            </div>
+            
+            <div class="input-area glass-panel">
+                <form id="query-form">
+                    <input type="text" id="query-input" placeholder="e.g., What are our top 5 most rented movie categories?" autocomplete="off" required>
+                    <button type="submit" id="submit-btn">
+                        <i data-lucide="send"></i>
+                    </button>
+                </form>
+            </div>
+        </main>
+    </div>
+
+    <script src="/static/app.js"></script>
+</body>
+</html>
