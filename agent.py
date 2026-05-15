@@ -27,7 +27,7 @@ def get_sql_agent():
         raise ValueError("GOOGLE_API_KEY is missing. Please configure it in .env")
         
     llm = ChatGoogleGenerativeAI(
-        model="gemini-2.5-flash", 
+        model="gemini-flash-latest", 
         temperature=0, 
         google_api_key=api_key,
         max_retries=5
